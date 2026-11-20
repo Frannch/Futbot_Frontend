@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import BotonPrimario from './BotonPrimario';
+import BotonPrimario from './ui/Button';
 import { abandonarLiga } from '../services/AbandonarLiga';
 import { quitarLigaClub } from '../services/ligasClub';
 

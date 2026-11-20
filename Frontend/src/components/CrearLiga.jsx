@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState, useMemo } from 'react';
-import InputTexto from './InputTexto';
-import BotonPrimario from './BotonPrimario';
+import InputTexto from './ui/Input.jsx';
+import BotonPrimario from './ui/Button.jsx';
 import SelectorConvocatoria from './SelectorConvocatoria';
 import {
   obtenerClubes,

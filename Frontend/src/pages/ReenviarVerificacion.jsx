@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Header from '../components/Header';
-import InputTexto from '../components/InputTexto';
-import BotonPrimario from '../components/BotonPrimario';
+import InputTexto from '../components/ui/Input';
+import BotonPrimario from '../components/ui/Button';
 
 const API_URL = import.meta.env.VITE_API_URL ?? 'http://127.0.0.1:8000';
 

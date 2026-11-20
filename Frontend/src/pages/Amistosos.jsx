@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import Header from '../components/Header.jsx';
 import AmistososNav from '../components/AmistososNav.jsx';
 import SelectorConvocatoria from '../components/SelectorAmistoso.jsx';
-import Temporizador from '../components/Temporizador.jsx';
+import Temporizador from '../components/Timer.jsx';
 import { useWebSocket } from '../services/websocket.jsx';
 import {
   obtenerClubes,

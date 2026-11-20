@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import Header from '../components/Header';
-import InputTexto from '../components/InputTexto';
-import BotonPrimario from '../components/BotonPrimario';
+import InputTexto from '../components/ui/Input.jsx';
+import BotonPrimario from '../components/ui/Button.jsx';
 import { useWebSocket } from '../services/websocket.jsx';
 
 function Login({ cambiarPantalla }) {

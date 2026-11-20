@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import BotonPrimario from './BotonPrimario';
+import BotonPrimario from './ui/Button';
 import { iniciarLiga } from "../services/ligas";
 
 const MINIMO_EQUIPOS_PARA_INICIAR = 4;

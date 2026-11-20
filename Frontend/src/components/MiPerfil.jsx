@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
-import InputTexto from './InputTexto.jsx';
-import BotonPrimario from './BotonPrimario.jsx';
+import InputTexto from './ui/Input.jsx';
+import BotonPrimario from './ui/Button.jsx';
 import {
   actualizarPerfil,
   obtenerPerfil,

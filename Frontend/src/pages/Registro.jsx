@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import Header from '../components/Header';
-import InputTexto from '../components/InputTexto';
-import BotonPrimario from '../components/BotonPrimario';
+import InputTexto from '../components/ui/Input';
+import BotonPrimario from '../components/ui/Button';
 
 function Registro({ cambiarPantalla }) {
   

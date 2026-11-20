@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import SelectorConvocatoria from './SelectorConvocatoria';
-import BotonPrimario from './BotonPrimario';
+import BotonPrimario from './ui/Button.jsx';
 import { obtenerComportamientos, obtenerJugadores } from '../services/clubes.js';
 import { ErrorHttp } from '../core/api/httpClient.js';
 import { unirseALiga } from '../services/ligas.js';

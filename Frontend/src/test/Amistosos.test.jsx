@@ -49,7 +49,7 @@ vi.mock('../components/SelectorAmistoso.jsx', () => ({
   ),
 }));
 
-vi.mock('../components/Temporizador.jsx', () => ({
+vi.mock('../components/Timer.jsx', () => ({
   default: ({ clubRival, onTiempoExpirado }) => (
     <div>
       <p>Esperando respuesta de {clubRival.nombre}</p>

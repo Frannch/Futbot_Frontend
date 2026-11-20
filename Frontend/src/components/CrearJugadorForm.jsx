@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import InputTexto from '../components/InputTexto';
-import BotonPrimario from '../components/BotonPrimario';
+import InputTexto from './ui/Input';
+import BotonPrimario from './ui/Button';
 import { crearJugador } from '../services/JugadorService';
 
 // Constantes globales para evitar valores numéricos directos

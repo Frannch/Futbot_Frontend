@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import BotonPrimario from '../components/BotonPrimario.jsx';
+import BotonPrimario from '../components/ui/Button.jsx';
 import CambioEnCancha from '../components/CambioEnCancha.jsx';
 import ComportamientosEnCancha from '../components/ComportamientosEnCancha.jsx';
 

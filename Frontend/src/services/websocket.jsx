@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState, useRef } from 'react';
 import SelectorConvocatoria from '../components/SelectorAmistoso.jsx';
-import Temporizador from '../components/Temporizador.jsx';
+import Temporizador from '../components/Timer.jsx';
 import {
   aceptarAmistoso,
   obtenerComportamientos,
