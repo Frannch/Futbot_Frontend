@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
-import CanchaAmistoso from '../pages/CanchaAmistoso.jsx';
+import CanchaAmistoso from '../../pages/CanchaAmistoso.jsx';
 
 const { canchaRenderizada } = vi.hoisted(() => ({ canchaRenderizada: vi.fn() }));
 
-vi.mock('../pages/Cancha.jsx', () => ({
+vi.mock('../../pages/Cancha.jsx', () => ({
   default: (props) => {
     canchaRenderizada(props);
     return <div data-testid="cancha-amistoso" />;

@@ -1,11 +1,11 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { act } from '@testing-library/react';
-import FakeWebSocket from '../mocks/FakeWebSocket';
+import FakeWebSocket from '../../mocks/FakeWebSocket.js';
 import {
   combinarPelota,
   crearServicioPartidosEnVivo,
   normalizarOrdenPartido,
-} from '../services/partidosEnVivo.js';
+} from '../../services/partidosEnVivo.js';
 
 const token = 'token-de-prueba';
 

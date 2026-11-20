@@ -1,17 +1,17 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { act, cleanup, render, screen, waitFor } from '@testing-library/react';
-import FakeWebSocket from '../mocks/FakeWebSocket';
-import PartidosEnVivo, { usuarioParticipaEnPartido } from '../pages/PartidosEnVivo.jsx';
+import FakeWebSocket from '../../mocks/FakeWebSocket.js';
+import PartidosEnVivo, { usuarioParticipaEnPartido } from '../../pages/PartidosEnVivo.jsx';
 
 const { obtenerDatosDireccionLigaMock } = vi.hoisted(() => ({
   obtenerDatosDireccionLigaMock: vi.fn(),
 }));
 
-vi.mock('../components/layout/Header.jsx', () => ({
+vi.mock('../../components/layout/Header.jsx', () => ({
   default: () => <header>Header</header>,
 }));
 
-vi.mock('../services/ligas.js', () => ({
+vi.mock('../../services/ligas.js', () => ({
   obtenerDatosDireccionLiga: obtenerDatosDireccionLigaMock,
 }));
 

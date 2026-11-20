@@ -7,7 +7,7 @@ import {
   actualizarComportamiento,
   eliminarComportamiento,
   probarComportamiento,
-} from '../services/ComportamientoService';
+} from '../../services/ComportamientoService';
 
 describe('obtenerComportamientos', () => {
   beforeEach(() => {

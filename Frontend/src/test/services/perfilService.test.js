@@ -4,7 +4,7 @@ import {
   obtenerIdUsuarioActual,
   obtenerPerfil,
   obtenerTokenUsuarioActual,
-} from '../services/perfilService.js';
+} from '../../services/perfilService.js';
 
 describe('actualizarPerfil', () => {
   afterEach(() => {

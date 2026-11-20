@@ -1,13 +1,13 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import Amistosos from '../pages/Amistosos.jsx';
+import Amistosos from '../../pages/Amistosos.jsx';
 import {
   obtenerClubes,
   obtenerComportamientos,
   obtenerInvitacionesPendientes,
   obtenerJugadores,
   solicitarAmistoso,
-} from '../services/clubes.js';
+} from '../../services/clubes.js';
 
 const {
   useWebSocketMock,
@@ -21,11 +21,11 @@ const {
   guardarConvocatoriaPartidoMock: vi.fn(),
 }));
 
-vi.mock('../services/websocket.jsx', () => ({
+vi.mock('../../services/websocket.jsx', () => ({
   useWebSocket: useWebSocketMock,
 }));
 
-vi.mock('../services/clubes.js', () => ({
+vi.mock('../../services/clubes.js', () => ({
   obtenerClubes: vi.fn(),
   obtenerComportamientos: vi.fn(),
   obtenerInvitacionesPendientes: vi.fn(),
@@ -34,7 +34,7 @@ vi.mock('../services/clubes.js', () => ({
   solicitarAmistoso: vi.fn(),
 }));
 
-vi.mock('../components/layout/SelectorAmistoso.jsx', () => ({
+vi.mock('../../components/layout/SelectorAmistoso.jsx', () => ({
   default: ({ abierto, nombreClubDesafiado, mensajeError, alCerrar, alEnviar }) => (
     abierto ? (
       <div role="dialog">
@@ -49,7 +49,7 @@ vi.mock('../components/layout/SelectorAmistoso.jsx', () => ({
   ),
 }));
 
-vi.mock('../components/layout/Timer.jsx', () => ({
+vi.mock('../../components/layout/Timer.jsx', () => ({
   default: ({ clubRival, onTiempoExpirado }) => (
     <div>
       <p>Esperando respuesta de {clubRival.nombre}</p>

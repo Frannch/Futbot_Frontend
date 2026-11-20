@@ -2,7 +2,7 @@ import { describe, expect, it, vi, beforeEach, afterEach,} from 'vitest';
 
 import { act, render,  screen,  fireEvent,  cleanup, waitFor,} from '@testing-library/react';
 
-import Cancha from '../pages/Cancha.jsx';
+import Cancha from '../../pages/Cancha.jsx';
 
 const estadoInicial = {
   tick: 10,

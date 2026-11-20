@@ -7,7 +7,7 @@ import {
   obtenerJugadores,
   rechazarAmistoso,
   solicitarAmistoso
-} from '../services/clubes.js';
+} from '../../services/clubes.js';
 
 const convocatoria = {
   formacion_tactica: 1,

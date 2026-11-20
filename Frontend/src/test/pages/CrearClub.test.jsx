@@ -1,6 +1,6 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import FundarClub from '../pages/CrearClub';
+import FundarClub from '../../pages/CrearClub';
 
 function completarNombre() {
   fireEvent.change(screen.getByLabelText('Nombre Oficial'), {

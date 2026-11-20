@@ -1,8 +1,8 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { act, renderHook } from '@testing-library/react';
 
-import FakeWebSocket from '../mocks/FakeWebSocket';
-import useWebSocketLigas from '../hooks/useWebSocketLigas';
+import FakeWebSocket from '../../mocks/FakeWebSocket';
+import useWebSocketLigas from '../../hooks/useWebSocketLigas';
 
 const ligaInicial = {
     id_liga: 1,

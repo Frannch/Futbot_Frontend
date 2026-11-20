@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { abandonarLiga } from '../services/AbandonarLiga';
+import { abandonarLiga } from '../../services/AbandonarLiga';
 
 describe('servicio abandonarLiga', () => {
   afterEach(() => {

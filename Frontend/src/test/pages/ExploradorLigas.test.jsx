@@ -1,8 +1,8 @@
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import ExploradorLigas from '../pages/ExploradorLigas.jsx';
+import ExploradorLigas from '../../pages/ExploradorLigas.jsx';
 
-vi.mock('../components/layout/Header.jsx', () => ({
+vi.mock('../../components/layout/Header.jsx', () => ({
   default: ({ onCambiarPantalla }) => (
     <header>
       Header
@@ -11,7 +11,7 @@ vi.mock('../components/layout/Header.jsx', () => ({
   )
 }));
 
-vi.mock('../components/layout/CrearLiga.jsx', () => ({
+vi.mock('../../components/layout/CrearLiga.jsx', () => ({
   default: ({ alCerrar, irAlLobby, irALogin }) => (
     <div role="dialog">
       <button onClick={alCerrar}>Cerrar modal</button>
@@ -21,7 +21,7 @@ vi.mock('../components/layout/CrearLiga.jsx', () => ({
   )
 }));
 
-vi.mock('../components/layout/ListaLigas.jsx', () => ({
+vi.mock('../../components/layout/ListaLigas.jsx', () => ({
   default: ({ onUnirse }) => (
     <button onClick={() => onUnirse({ id: 24, nombre: 'Liga disponible' })}>
       Unirse a liga disponible
@@ -30,7 +30,7 @@ vi.mock('../components/layout/ListaLigas.jsx', () => ({
 }));
 
 // Mock de InscripcionLiga para simular la confirmación de la inscripción
-vi.mock('../components/layout/InscripcionLiga.jsx', () => ({
+vi.mock('../../components/layout/InscripcionLiga.jsx', () => ({
   default: ({ liga, irAlLobby }) => (
     <div>
       <button onClick={() => irAlLobby(liga.id, liga.nombre)}>

@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { crearJugador } from '../services/JugadorService';
+import { crearJugador } from '../../services/JugadorService';
 
 describe('jugadorService', () => {
   beforeEach(() => {

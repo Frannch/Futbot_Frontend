@@ -2,7 +2,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import {
   cambiarComportamientoJugador,
   solicitarCambioPartido,
-} from '../services/partidos.js';
+} from '../../services/partidos.js';
 
 describe('solicitarCambioPartido', () => {
   afterEach(() => {

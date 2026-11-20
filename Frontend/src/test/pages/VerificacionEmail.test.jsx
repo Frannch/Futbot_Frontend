@@ -1,6 +1,6 @@
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import VerificacionEmail from '../pages/VerificacionEmail';
+import VerificacionEmail from '../../pages/VerificacionEmail';
 
 describe('VerificacionEmail', () => {
   afterEach(() => {

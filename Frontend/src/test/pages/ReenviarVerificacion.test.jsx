@@ -1,6 +1,6 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import ReenviarVerificacion from '../pages/ReenviarVerificacion';
+import ReenviarVerificacion from '../../pages/ReenviarVerificacion';
 
 describe('ReenviarVerificacion', () => {
   beforeEach(() => {

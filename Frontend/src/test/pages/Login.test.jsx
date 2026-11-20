@@ -1,9 +1,9 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import Login from '../pages/Login';
+import Login from '../../pages/Login';
 
 // contexto falso del websocket, porque montamos el login sin la app alrededor
-vi.mock('../services/websocket.jsx', () => ({
+vi.mock('../../services/websocket.jsx', () => ({
   useWebSocket: () => ({ conectarWebSocket: vi.fn() })
 }));
 

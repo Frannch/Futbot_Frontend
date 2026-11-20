@@ -1,6 +1,6 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import Registro from '../pages/Registro';
+import Registro from '../../pages/Registro';
 
 const datosValidos = {
   username: 'usuario123',

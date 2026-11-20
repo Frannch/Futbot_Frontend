@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { adaptarFixture } from '../utils/fixture';
+import { adaptarFixture } from '../../utils/fixture';
 
 describe('adaptarFixture', () => {
   it('retorna array vacío si el fixture es nulo, indefinido o vacío', () => {

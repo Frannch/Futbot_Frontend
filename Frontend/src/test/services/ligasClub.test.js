@@ -3,7 +3,7 @@ import {
   obtenerLigasClub,
   quitarLigaClub,
   registrarLigaClub,
-} from '../services/ligasClub.js';
+} from '../../services/ligasClub.js';
 
 describe('persistencia local de ligas del club', () => {
   afterEach(() => localStorage.clear());
