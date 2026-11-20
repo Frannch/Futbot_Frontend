@@ -1,4 +1,4 @@
-import { httpDelete, httpGet, httpPost, httpPut } from './http.js';
+import { httpDelete, httpGet, httpPost, httpPut } from '../core/api/http.js';
 
 export async function unirseALiga(idLiga, datosInscripcion) {
   if (!idLiga) {

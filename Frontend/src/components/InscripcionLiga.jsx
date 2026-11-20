@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import SelectorConvocatoria from './SelectorConvocatoria';
 import BotonPrimario from './BotonPrimario';
 import { obtenerComportamientos, obtenerJugadores } from '../services/clubes.js';
-import { ErrorHttp } from '../services/http.js';
+import { ErrorHttp } from '../core/api/http.js';
 import { unirseALiga } from '../services/ligas.js';
 
 function InscripcionLiga({
