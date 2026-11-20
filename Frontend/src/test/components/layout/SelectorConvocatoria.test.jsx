@@ -1,6 +1,6 @@
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import SelectorConvocatoria from '../components/layout/SelectorConvocatoria';
+import SelectorConvocatoria from '../../../components/layout/SelectorConvocatoria';
 
 const jugadores = Array.from({ length: 8 }, (_, i) => ({
   id_jugador: i + 1,

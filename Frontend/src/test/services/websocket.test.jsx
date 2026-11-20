@@ -1,6 +1,6 @@
 import { act, cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { WebSocketProvider, useWebSocket } from '../services/websocket.jsx';
+import { WebSocketProvider, useWebSocket } from '../../services/websocket.jsx';
 
 const {
   aceptarAmistosoMock,
@@ -20,7 +20,7 @@ const {
   enviarCambioPartidoMock: vi.fn(),
 }));
 
-vi.mock('../services/clubes.js', () => ({
+vi.mock('../../services/clubes.js', () => ({
   aceptarAmistoso: aceptarAmistosoMock,
   obtenerClubPorId: obtenerClubPorIdMock,
   obtenerComportamientos: obtenerComportamientosMock,
@@ -29,7 +29,7 @@ vi.mock('../services/clubes.js', () => ({
   rechazarAmistoso: rechazarAmistosoMock,
 }));
 
-vi.mock('../services/partidos.js', () => ({
+vi.mock('../../services/partidos.js', () => ({
   solicitarCambioPartido: enviarCambioPartidoMock,
 }));
 

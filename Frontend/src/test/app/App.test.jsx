@@ -4,17 +4,17 @@ import App from '../../app/App.jsx';
 
 const desconectarWebSocket = vi.fn();
 
-vi.mock('../services/websocket.jsx', () => ({
+vi.mock('../../services/websocket.jsx', () => ({
   useWebSocket: () => ({ desconectarWebSocket }),
 }));
 
-vi.mock('../pages/Login.jsx', () => ({
+vi.mock('../../pages/Login.jsx', () => ({
   default: ({ cambiarPantalla }) => (
     <button onClick={() => cambiarPantalla('amistosos')}>Pantalla de login</button>
   ),
 }));
 
-vi.mock('../pages/MiClub.jsx', () => ({
+vi.mock('../../pages/MiClub.jsx', () => ({
   default: ({ cerrarSesion }) => (
     <>
       <p>Pantalla de mi club</p>
@@ -23,17 +23,17 @@ vi.mock('../pages/MiClub.jsx', () => ({
   ),
 }));
 
-vi.mock('../pages/Amistosos.jsx', () => ({
+vi.mock('../../pages/Amistosos.jsx', () => ({
   default: ({ cerrarSesion }) => (
     <button onClick={cerrarSesion}>Pantalla de amistosos</button>
   ),
 }));
 
-vi.mock('../pages/Cancha.jsx', () => ({
+vi.mock('../../pages/Cancha.jsx', () => ({
   default: () => <p>Pantalla de cancha</p>,
 }));
 
-vi.mock('../pages/ExploradorLigas.jsx', () => ({
+vi.mock('../../pages/ExploradorLigas.jsx', () => ({
   default: ({ irAlLobby, ligaActiva }) => (
     <>
       <p>Pantalla de ligas</p>
@@ -45,17 +45,17 @@ vi.mock('../pages/ExploradorLigas.jsx', () => ({
   ),
 }));
 
-vi.mock('../pages/CrearClub.jsx', () => ({
+vi.mock('../../pages/CrearClub.jsx', () => ({
   default: ({ cerrarSesion }) => (
     <button onClick={cerrarSesion}>Pantalla de crear club</button>
   ),
 }));
 
-vi.mock('../pages/Registro.jsx', () => ({
+vi.mock('../../pages/Registro.jsx', () => ({
   default: () => <p>Pantalla de registro</p>,
 }));
 
-vi.mock('../pages/PartidosEnVivo.jsx', () => ({
+vi.mock('../../pages/PartidosEnVivo.jsx', () => ({
   default: () => <p data-testid="partidos-en-vivo-real">Partidos en Vivo actualizado</p>,
 }));
 

@@ -1,9 +1,9 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import CrearJugadorForm from '../components/layout/CrearJugadorForm';
-import { crearJugador } from '../services/JugadorService';
+import CrearJugadorForm from '../../../components/layout/CrearJugadorForm';
+import { crearJugador } from '../../../services/JugadorService';
 
-vi.mock('../services/JugadorService', () => ({
+vi.mock('../../../services/JugadorService', () => ({
   crearJugador: vi.fn(),
 }));
 

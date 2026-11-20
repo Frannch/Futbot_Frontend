@@ -1,6 +1,6 @@
 import { cleanup, act, render, screen } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import Temporizador from '../components/layout/Timer.jsx';
+import Temporizador from '../../../components/layout/Timer.jsx';
 
 const clubes = {
   local: {

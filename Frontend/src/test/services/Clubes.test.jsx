@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { aceptarAmistoso, rechazarAmistoso } from '../services/clubes.js';
+import { aceptarAmistoso, rechazarAmistoso } from '../../services/clubes.js';
 
 const convocatoria = {
   formacion_tactica: 1,

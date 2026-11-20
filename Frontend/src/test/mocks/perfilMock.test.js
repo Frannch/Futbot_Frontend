@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it } from 'vitest';
-import { actualizarPerfilMock, obtenerPerfilMock } from '../mocks/perfilMock.js';
+import { actualizarPerfilMock, obtenerPerfilMock } from '../../mocks/perfilMock.js';
 
 const perfilInicial = {
   id: 'mock-user-1',

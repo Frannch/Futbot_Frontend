@@ -1,9 +1,9 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import IniciarLiga from '../components/layout/IniciarLiga';
-import { iniciarLiga } from '../services/ligas';
+import IniciarLiga from '../../../components/layout/IniciarLiga';
+import { iniciarLiga } from '../../../services/ligas';
 
-vi.mock('../services/ligas', () => ({ iniciarLiga: vi.fn() }));
+vi.mock('../../../services/ligas', () => ({ iniciarLiga: vi.fn() }));
 
 describe('IniciarLiga', () => {
   beforeEach(() => {

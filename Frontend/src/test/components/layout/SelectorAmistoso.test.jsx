@@ -1,7 +1,7 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { useState } from 'react';
-import SelectorConvocatoria from '../components/layout/SelectorAmistoso.jsx';
+import SelectorConvocatoria from '../../../components/layout/SelectorAmistoso.jsx';
 
 const jugadores = [
   { id_jugador: 1, nombre: 'Jugador 1' },

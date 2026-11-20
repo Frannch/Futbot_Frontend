@@ -1,8 +1,8 @@
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import Header from '../components/layout/Header.jsx';
+import Header from '../../../components/layout/Header.jsx';
 
-vi.mock('../components/layout/MiPerfil.jsx', () => ({
+vi.mock('../../../components/layout/MiPerfil.jsx', () => ({
   default: ({ alCerrar, onCerrarSesion }) => (
     <div role="dialog" aria-label="Mi Perfil">
       <button type="button" onClick={alCerrar}>Cerrar perfil</button>

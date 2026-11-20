@@ -3,10 +3,10 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { render, screen, within, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/vitest';
 
-import ListaLigas from '../components/layout/ListaLigas';
-import useWebSocketLigas from '../hooks/useWebSocketLigas';
+import ListaLigas from '../../../components/layout/ListaLigas';
+import useWebSocketLigas from '../../../hooks/useWebSocketLigas';
 
-vi.mock('../hooks/useWebSocketLigas', () => ({
+vi.mock('../../../hooks/useWebSocketLigas', () => ({
   default: vi.fn(),
 }));
 

@@ -1,13 +1,13 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import MiPerfil from '../components/layout/MiPerfil.jsx';
+import MiPerfil from '../../../components/layout/MiPerfil.jsx';
 
 const { actualizarPerfilMock, obtenerPerfilMock } = vi.hoisted(() => ({
   actualizarPerfilMock: vi.fn(),
   obtenerPerfilMock: vi.fn(),
 }));
 
-vi.mock('../services/perfilService.js', () => ({
+vi.mock('../../../services/perfilService.js', () => ({
   actualizarPerfil: actualizarPerfilMock,
   obtenerPerfil: obtenerPerfilMock,
   obtenerIdUsuarioActual: () => '8',

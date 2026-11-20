@@ -1,14 +1,14 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import CrearLiga from '../components/layout/CrearLiga';
-import { COMPORTAMIENTOS, JUGADORES } from '../mocks/Club.js';
+import CrearLiga from '../../../components/layout/CrearLiga.jsx';
+import { COMPORTAMIENTOS, JUGADORES } from '../../../mocks/Club.js';
 
 const { obtenerComportamientosMock, obtenerJugadoresMock } = vi.hoisted(() => ({
   obtenerComportamientosMock: vi.fn(),
   obtenerJugadoresMock: vi.fn()
 }));
 
-vi.mock('../services/clubes.js', async (importOriginal) => ({
+vi.mock('../../../services/clubes.js', async (importOriginal) => ({
   ...await importOriginal(),
   obtenerComportamientos: obtenerComportamientosMock,
   obtenerJugadores: obtenerJugadoresMock

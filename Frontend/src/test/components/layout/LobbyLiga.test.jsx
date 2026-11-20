@@ -1,10 +1,10 @@
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import LobbyLiga from '../components/layout/LobbyLiga';
+import LobbyLiga from '../../../components/layout/LobbyLiga';
 
 const { actualizaciones } = vi.hoisted(() => ({ actualizaciones: { current: {} } }));
 
-vi.mock('../hooks/useWebSocketLigas', () => ({
+vi.mock('../../../hooks/useWebSocketLigas', () => ({
   default: (idLiga) => ({
     ligas: idLiga == null
       ? []
@@ -13,7 +13,7 @@ vi.mock('../hooks/useWebSocketLigas', () => ({
 }));
 
 // Mockeamos los componentes hijos para aislar las pruebas de LobbyLiga
-vi.mock('../components/layout/ListaClubesLiga', () => ({
+vi.mock('../../../components/layout/ListaClubesLiga', () => ({
   default: ({ clubes, fechas }) => (
     <div data-testid="lista-clubes">
       Clubes cargados: {clubes?.length ?? 0}
@@ -22,11 +22,11 @@ vi.mock('../components/layout/ListaClubesLiga', () => ({
   ),
 }));
 
-vi.mock('../components/layout/CambiarAlineacion', () => ({
+vi.mock('../../../components/layout/CambiarAlineacion', () => ({
   default: ({ idLiga }) => <div data-testid="cambiar-alineacion">Liga {idLiga}</div>,
 }));
 
-vi.mock('../services/ligas', async (importOriginal) => {
+vi.mock('../../../services/ligas', async (importOriginal) => {
   const actual = await importOriginal();
   return {
     ...actual,
@@ -34,7 +34,7 @@ vi.mock('../services/ligas', async (importOriginal) => {
   };
 });
 
-vi.mock('../components/layout/fixture', () => ({
+vi.mock('../../../components/layout/fixture', () => ({
   default: ({ fechas, onEspectarPartido }) => (
     <div data-testid="fixture">
       Fechas cargadas: {fechas?.length ?? 0}

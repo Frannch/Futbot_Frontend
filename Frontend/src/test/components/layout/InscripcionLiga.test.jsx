@@ -2,20 +2,20 @@ import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/re
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import '@testing-library/jest-dom/vitest';
 
-import InscripcionLiga from '../components/layout/InscripcionLiga.jsx';
-import { obtenerComportamientos, obtenerJugadores } from '../services/clubes.js';
-import { unirseALiga } from '../services/ligas.js';
+import InscripcionLiga from '../../../components/layout/InscripcionLiga.jsx';
+import { obtenerComportamientos, obtenerJugadores } from '../../../services/clubes.js';
+import { unirseALiga } from '../../../services/ligas.js';
 
-vi.mock('../services/clubes.js', () => ({
+vi.mock('../../../services/clubes.js', () => ({
   obtenerComportamientos: vi.fn(),
   obtenerJugadores: vi.fn(),
 }));
 
-vi.mock('../services/ligas.js', () => ({
+vi.mock('../../../services/ligas.js', () => ({
   unirseALiga: vi.fn(),
 }));
 
-vi.mock('../components/layout/SelectorConvocatoria.jsx', () => ({
+vi.mock('../../../components/layout/SelectorConvocatoria.jsx', () => ({
   default: ({ alCambiar }) => (
     <button
       type="button"
@@ -29,7 +29,7 @@ vi.mock('../components/layout/SelectorConvocatoria.jsx', () => ({
   ),
 }));
 
-vi.mock('../components/ui/Button.jsx', () => ({
+vi.mock('../../../components/ui/Button.jsx', () => ({
   default: ({ texto, tipo, disabled }) => (
     <button type={tipo} disabled={disabled}>{texto}</button>
   ),

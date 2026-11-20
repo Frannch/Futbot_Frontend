@@ -1,7 +1,7 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import '@testing-library/jest-dom/vitest';
-import ComportamientosEnCancha from '../components/layout/ComportamientosEnCancha.jsx';
+import ComportamientosEnCancha from '../../../components/layout/ComportamientosEnCancha.jsx';
 
 describe('ComportamientosEnCancha', () => {
   afterEach(() => cleanup());

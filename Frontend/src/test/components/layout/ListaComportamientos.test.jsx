@@ -16,7 +16,7 @@ import {
   afterEach,
 } from 'vitest';
 
-import ListaComportamientos from '../components/layout/ListaComportamientos';
+import ListaComportamientos from '../../../components/layout/ListaComportamientos';
 
 import {
   eliminarComportamiento,
@@ -24,9 +24,9 @@ import {
   obtenerComportamientoPorNombre,
   actualizarComportamiento,
   probarComportamiento,
-} from '../services/ComportamientoService';
+} from '../../../services/ComportamientoService';
 
-vi.mock('../services/ComportamientoService', () => ({
+vi.mock('../../../services/ComportamientoService', () => ({
   eliminarComportamiento: vi.fn(),
   obtenerComportamientos: vi.fn(),
   obtenerComportamientoPorNombre: vi.fn(),

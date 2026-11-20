@@ -1,7 +1,7 @@
 import { cleanup, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, describe, it, expect, vi } from 'vitest';
-import MiClubNav from '../components/layout/MiClubNav';
+import MiClubNav from '../../../components/layout/MiClubNav';
 
 afterEach(() => {
   cleanup();

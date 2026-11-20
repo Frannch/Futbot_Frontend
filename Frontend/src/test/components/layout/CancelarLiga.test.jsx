@@ -1,10 +1,10 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import '@testing-library/jest-dom/vitest';
-import CancelarLiga from '../components/layout/CancelarLiga.jsx';
-import { cancelarLiga } from '../services/ligas.js';
+import CancelarLiga from '../../../components/layout/CancelarLiga.jsx';
+import { cancelarLiga } from '../../../services/ligas.js';
 
-vi.mock('../services/ligas.js', async (importOriginal) => {
+vi.mock('../../../services/ligas.js', async (importOriginal) => {
   const actual = await importOriginal();
   return { ...actual, cancelarLiga: vi.fn() };
 });

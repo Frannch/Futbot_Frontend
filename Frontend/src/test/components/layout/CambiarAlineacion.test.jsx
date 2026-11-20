@@ -1,18 +1,18 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import CambiarAlineacion from '../components/layout/CambiarAlineacion';
+import CambiarAlineacion from '../../../components/layout/CambiarAlineacion.jsx';
 import {
   actualizarAlineacionLiga,
   obtenerAlineacionLiga,
-} from '../services/ligas.js';
-import { obtenerComportamientos, obtenerJugadores } from '../services/clubes.js';
+} from '../../../services/ligas.js';
+import { obtenerComportamientos, obtenerJugadores } from '../../../services/clubes.js';
 
-vi.mock('../services/ligas.js', () => ({
+vi.mock('../../../services/ligas.js', () => ({
   actualizarAlineacionLiga: vi.fn(),
   obtenerAlineacionLiga: vi.fn(),
 }));
 
-vi.mock('../services/clubes.js', () => ({
+vi.mock('../../../services/clubes.js', () => ({
   obtenerComportamientos: vi.fn(),
   obtenerJugadores: vi.fn(),
 }));
