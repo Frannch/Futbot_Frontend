@@ -7,7 +7,7 @@ const { obtenerDatosDireccionLigaMock } = vi.hoisted(() => ({
   obtenerDatosDireccionLigaMock: vi.fn(),
 }));
 
-vi.mock('../components/Header.jsx', () => ({
+vi.mock('../components/layout/Header.jsx', () => ({
   default: () => <header>Header</header>,
 }));
 

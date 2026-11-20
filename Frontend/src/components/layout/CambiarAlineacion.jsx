@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import SelectorConvocatoria from './SelectorConvocatoria';
-import { obtenerComportamientos, obtenerJugadores } from '../services/clubes.js';
+import { obtenerComportamientos, obtenerJugadores } from '../../services/clubes.js';
 import {
   actualizarAlineacionLiga,
   obtenerAlineacionLiga,
-} from '../services/ligas.js';
+} from '../../services/ligas.js';
 
 function CambiarAlineacion({ idLiga }) {
   const [jugadores, setJugadores] = useState([]);

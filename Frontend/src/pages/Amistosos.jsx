@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import Header from '../components/Header.jsx';
-import AmistososNav from '../components/AmistososNav.jsx';
-import SelectorConvocatoria from '../components/SelectorAmistoso.jsx';
-import Temporizador from '../components/Timer.jsx';
+import Header from '../components/layout/Header.jsx';
+import AmistososNav from '../components/layout/AmistososNav.jsx';
+import SelectorConvocatoria from '../components/layout/SelectorAmistoso.jsx';
+import Temporizador from '../components/layout/Timer.jsx';
 import { useWebSocket } from '../services/websocket.jsx';
 import {
   obtenerClubes,

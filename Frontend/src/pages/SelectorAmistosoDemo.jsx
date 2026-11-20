@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import SelectorConvocatoria from '../components/SelectorAmistoso.jsx';
+import SelectorConvocatoria from '../components/layout/SelectorAmistoso.jsx';
 import {
   clubesMock,
   comportamientosMock,

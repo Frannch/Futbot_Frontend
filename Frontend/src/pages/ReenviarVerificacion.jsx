@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Header from '../components/Header';
+import Header from '../components/layout/Header';
 import InputTexto from '../components/ui/Input';
 import BotonPrimario from '../components/ui/Button';
 

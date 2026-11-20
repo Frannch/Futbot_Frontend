@@ -1,13 +1,13 @@
 import { useCallback, useEffect, useState } from 'react';
-import InputTexto from './ui/Input.jsx';
-import BotonPrimario from './ui/Button.jsx';
+import InputTexto from '../ui/Input.jsx';
+import BotonPrimario from '../ui/Button.jsx';
 import {
   actualizarPerfil,
   obtenerPerfil,
   obtenerIdUsuarioActual,
   obtenerTokenUsuarioActual,
   PERFIL_MOCK_ACTIVO,
-} from '../services/perfilService.js';
+} from '../../services/perfilService.js';
 
 function MiPerfil({
   abierto = true,

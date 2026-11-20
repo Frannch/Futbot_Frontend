@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import Header from '../components/Header';
-import CrearLiga from '../components/CrearLiga';
-import ListaLiga from '../components/ListaLigas';
-import InscripcionLiga from '../components/InscripcionLiga';
-import LobbyLiga from '../components/LobbyLiga';
+import Header from '../components/layout/Header';
+import CrearLiga from '../components/layout/CrearLiga';
+import ListaLiga from '../components/layout/ListaLigas';
+import InscripcionLiga from '../components/layout/InscripcionLiga';
+import LobbyLiga from '../components/layout/LobbyLiga';
 
 function ExploradorLigas({
   irAlLobby,

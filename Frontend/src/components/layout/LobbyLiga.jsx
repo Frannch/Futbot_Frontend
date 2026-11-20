@@ -5,9 +5,9 @@ import AbandonarLiga from './AbandonarLiga';
 import IniciarLiga from './IniciarLiga';
 import CancelarLiga from './CancelarLiga';
 import CambiarAlineacion from './CambiarAlineacion';
-import useWebSocketLigas from '../hooks/useWebSocketLigas';
-import { obtenerLobbyLiga } from '../services/ligas';
-import { adaptarFixture } from '../utils/fixture';
+import useWebSocketLigas from '../../hooks/useWebSocketLigas';
+import { obtenerLobbyLiga } from '../../services/ligas';
+import { adaptarFixture } from '../../utils/fixture';
 
 function LobbyLiga({ liga, cambiarPantalla }) {
   const { ligas } = useWebSocketLigas(liga?.id);

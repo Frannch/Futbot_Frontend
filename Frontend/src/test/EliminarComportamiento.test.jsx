@@ -1,7 +1,7 @@
 import { cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import '@testing-library/jest-dom/vitest';
-import EliminarComportamiento from '../components/EliminarComportamiento.jsx';
+import EliminarComportamiento from '../components/layout/EliminarComportamiento.jsx';
 import { eliminarComportamiento } from '../services/ComportamientoService.js';
 
 vi.mock('../services/ComportamientoService.js', () => ({

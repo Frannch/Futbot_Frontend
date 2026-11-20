@@ -1,6 +1,6 @@
 import { cleanup, render, screen, within } from '@testing-library/react';
 import { afterEach, describe, expect, it } from 'vitest';
-import ListaClubesLiga from '../components/ListaClubesLiga.jsx';
+import ListaClubesLiga from '../components/layout/ListaClubesLiga.jsx';
 
 describe('ListaClubesLiga', () => {
   afterEach(cleanup);

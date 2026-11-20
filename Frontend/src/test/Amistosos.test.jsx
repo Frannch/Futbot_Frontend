@@ -34,7 +34,7 @@ vi.mock('../services/clubes.js', () => ({
   solicitarAmistoso: vi.fn(),
 }));
 
-vi.mock('../components/SelectorAmistoso.jsx', () => ({
+vi.mock('../components/layout/SelectorAmistoso.jsx', () => ({
   default: ({ abierto, nombreClubDesafiado, mensajeError, alCerrar, alEnviar }) => (
     abierto ? (
       <div role="dialog">
@@ -49,7 +49,7 @@ vi.mock('../components/SelectorAmistoso.jsx', () => ({
   ),
 }));
 
-vi.mock('../components/Timer.jsx', () => ({
+vi.mock('../components/layout/Timer.jsx', () => ({
   default: ({ clubRival, onTiempoExpirado }) => (
     <div>
       <p>Esperando respuesta de {clubRival.nombre}</p>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import BotonPrimario from './ui/Button';
-import { abandonarLiga } from '../services/AbandonarLiga';
-import { quitarLigaClub } from '../services/ligasClub';
+import BotonPrimario from '../ui/Button';
+import { abandonarLiga } from '../../services/AbandonarLiga';
+import { quitarLigaClub } from '../../services/ligasClub';
 
 function AbandonarLiga({ idLiga, cambiarPantalla }) {
   const [mostrarConfirmacion, setMostrarConfirmacion] = useState(false);

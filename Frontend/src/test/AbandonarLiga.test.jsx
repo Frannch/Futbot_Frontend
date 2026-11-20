@@ -3,7 +3,7 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { render, screen, fireEvent, waitFor, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/vitest';
 
-import AbandonarLiga from '../components/AbandonarLiga';
+import AbandonarLiga from '../components/layout/AbandonarLiga';
 import { abandonarLiga } from '../services/AbandonarLiga';
 
 vi.mock('../services/AbandonarLiga', () => ({

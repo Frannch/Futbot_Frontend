@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
-import Header from '../components/Header';
+import Header from '../components/layout/Header';
 import InputTexto from '../components/ui/Input';
 import BotonPrimario from '../components/ui/Button';
-import VisualizadorEscudo from '../components/VisualizadorEscudo';
+import VisualizadorEscudo from '../components/layout/VisualizadorEscudo';
 
 function FundarClub({ cambiarPantalla, cerrarSesion }) {
   const [nombreClub, setNombreClub] = useState('');

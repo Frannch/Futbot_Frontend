@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import Header from '../components/Header.jsx';
+import Header from '../components/layout/Header.jsx';
 import CanchaLiga from './CanchaLiga.jsx';
 import { crearServicioPartidosEnVivo } from '../services/partidosEnVivo.js';
 import {

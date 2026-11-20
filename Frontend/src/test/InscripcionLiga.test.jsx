@@ -2,7 +2,7 @@ import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/re
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import '@testing-library/jest-dom/vitest';
 
-import InscripcionLiga from '../components/InscripcionLiga.jsx';
+import InscripcionLiga from '../components/layout/InscripcionLiga.jsx';
 import { obtenerComportamientos, obtenerJugadores } from '../services/clubes.js';
 import { unirseALiga } from '../services/ligas.js';
 
@@ -15,7 +15,7 @@ vi.mock('../services/ligas.js', () => ({
   unirseALiga: vi.fn(),
 }));
 
-vi.mock('../components/SelectorConvocatoria.jsx', () => ({
+vi.mock('../components/layout/SelectorConvocatoria.jsx', () => ({
   default: ({ alCambiar }) => (
     <button
       type="button"
@@ -29,7 +29,7 @@ vi.mock('../components/SelectorConvocatoria.jsx', () => ({
   ),
 }));
 
-vi.mock('../components/BotonPrimario.jsx', () => ({
+vi.mock('../components/ui/Button.jsx', () => ({
   default: ({ texto, tipo, disabled }) => (
     <button type={tipo} disabled={disabled}>{texto}</button>
   ),

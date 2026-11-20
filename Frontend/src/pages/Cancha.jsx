@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import BotonPrimario from '../components/ui/Button.jsx';
-import CambioEnCancha from '../components/CambioEnCancha.jsx';
-import ComportamientosEnCancha from '../components/ComportamientosEnCancha.jsx';
+import CambioEnCancha from '../components/layout/CambioEnCancha.jsx';
+import ComportamientosEnCancha from '../components/layout/ComportamientosEnCancha.jsx';
 
 // Limitar un valor entre un mínimo y un máximo
 // se usa para limitar la posición de los jugadores y la pelota dentro de la cancha, y para limitar el factor de interpolación entre 0 y 1

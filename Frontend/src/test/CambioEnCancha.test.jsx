@@ -1,7 +1,7 @@
 import { cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import '@testing-library/jest-dom/vitest';
-import CambioEnCancha from '../components/CambioEnCancha.jsx';
+import CambioEnCancha from '../components/layout/CambioEnCancha.jsx';
 
 describe('CambioEnCancha', () => {
   afterEach(() => cleanup());

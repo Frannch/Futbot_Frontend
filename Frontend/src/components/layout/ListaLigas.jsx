@@ -1,6 +1,6 @@
 import React from 'react';
-import useWebSocketLigas from '../hooks/useWebSocketLigas';
-import { obtenerLigasClub } from '../services/ligasClub';
+import useWebSocketLigas from '../../hooks/useWebSocketLigas';
+import { obtenerLigasClub } from '../../services/ligasClub';
 
 function ListaLigas({ onUnirse, onIrAlLobby, miClubId }) {
   const { ligas, estado, error, listadoRecibido } = useWebSocketLigas();

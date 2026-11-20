@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { eliminarComportamiento } from '../services/ComportamientoService.js';
+import { eliminarComportamiento } from '../../services/ComportamientoService.js';
 
 function EliminarComportamiento({ comportamiento, onEliminado }) {
   const [confirmando, setConfirmando] = useState(false);

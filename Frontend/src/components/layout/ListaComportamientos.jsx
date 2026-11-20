@@ -4,7 +4,7 @@ import {
   obtenerComportamientoPorNombre,
   actualizarComportamiento,
   probarComportamiento,
-} from '../services/ComportamientoService';
+} from '../../services/ComportamientoService.js';
 import EliminarComportamiento from './EliminarComportamiento.jsx';
 import SimulacionComportamiento from './SimulacionComportamiento.jsx';
 

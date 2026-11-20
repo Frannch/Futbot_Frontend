@@ -2,7 +2,7 @@ import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import MiClub from '../pages/MiClub';
 
-vi.mock('../components/CrearJugadorForm', () => ({
+vi.mock('../components/layout/CrearJugadorForm', () => ({
   default: ({ onCreated, onCancel }) => (
     <div>
       <h2>Formulario crear jugador</h2>
@@ -34,7 +34,7 @@ vi.mock('../components/CrearJugadorForm', () => ({
   ),
 }));
 
-vi.mock('../components/CrearComportamiento', () => ({
+vi.mock('../components/layout/CrearComportamiento', () => ({
   default: ({ onCancel }) => (
     <div>
       <h2>Editor de comportamiento</h2>
@@ -45,7 +45,7 @@ vi.mock('../components/CrearComportamiento', () => ({
   ),
 }));
 
-vi.mock('../components/ListaComportamientos', () => ({
+vi.mock('../components/layout/ListaComportamientos', () => ({
   default: () => <div>Lista de comportamientos</div>,
 }));
 

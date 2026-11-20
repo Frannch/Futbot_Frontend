@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import Header from '../components/Header';
-import MiClubNav from '../components/MiClubNav';
-import CrearJugadorForm from '../components/CrearJugadorForm';
-import CrearComportamiento from '../components/CrearComportamiento';
-import ListaComportamientos from '../components/ListaComportamientos';
+import Header from '../components/layout/Header';
+import MiClubNav from '../components/layout/MiClubNav';
+import CrearJugadorForm from '../components/layout/CrearJugadorForm';
+import CrearComportamiento from '../components/layout/CrearComportamiento';
+import ListaComportamientos from '../components/layout/ListaComportamientos';
 import { obtenerJugadores } from '../services/clubes';  //agregar a FIX
 
 function MiClub({ cambiarPantalla, cerrarSesion }) {

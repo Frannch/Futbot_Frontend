@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import InputTexto from './ui/Input';
-import BotonPrimario from './ui/Button';
-import { crearJugador } from '../services/JugadorService';
+import InputTexto from '../ui/Input';
+import BotonPrimario from '../ui/Button';
+import { crearJugador } from '../../services/JugadorService';
 
 // Constantes globales para evitar valores numéricos directos
 const STAT_MIN = 20;

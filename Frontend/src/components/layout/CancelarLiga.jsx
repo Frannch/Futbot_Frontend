@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { cancelarLiga } from '../services/ligas.js';
+import { cancelarLiga } from '../../services/ligas.js';
 
 function CancelarLiga({ idLiga, esCreador = false, cambiarPantalla }) {
   const [confirmando, setConfirmando] = useState(false);

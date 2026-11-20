@@ -1,6 +1,6 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import CrearLiga from '../components/CrearLiga';
+import CrearLiga from '../components/layout/CrearLiga';
 import { COMPORTAMIENTOS, JUGADORES } from '../mocks/Club.js';
 
 const { obtenerComportamientosMock, obtenerJugadoresMock } = vi.hoisted(() => ({

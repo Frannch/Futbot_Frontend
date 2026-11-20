@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { crearComportamiento } from '../services/ComportamientoService';
+import { crearComportamiento } from '../../services/ComportamientoService';
 
 const sensores = [
   ['mi_posicion()', '(jugador_x, jugador_y)'],

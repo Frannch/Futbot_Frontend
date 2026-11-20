@@ -16,7 +16,7 @@ import {
   afterEach,
 } from 'vitest';
 
-import ListaComportamientos from '../components/ListaComportamientos';
+import ListaComportamientos from '../components/layout/ListaComportamientos';
 
 import {
   eliminarComportamiento,

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState, useMemo } from 'react';
-import InputTexto from './ui/Input.jsx';
-import BotonPrimario from './ui/Button.jsx';
+import InputTexto from '../ui/Input.jsx';
+import BotonPrimario from '../ui/Button.jsx';
 import SelectorConvocatoria from './SelectorConvocatoria';
 import {
   obtenerClubes,
@@ -9,7 +9,7 @@ import {
   obtenerJugadores,
   normalizarLogo,
   solicitarAmistoso
-} from '../services/clubes.js';
+} from '../../services/clubes.js';
 
 const DURACION_MINIMA = 1;
 const DURACION_MAXIMA = 100;
