@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { ErrorHttp, httpGet, httpPost } from '../services/http.js';
+import { ErrorHttp, httpGet, httpPost } from '../core/api/httpClient.js';
 
 const BASE_URL = import.meta.env.VITE_API_URL ?? 'http://127.0.0.1:8000';
 
