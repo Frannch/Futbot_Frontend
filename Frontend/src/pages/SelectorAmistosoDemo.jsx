@@ -4,7 +4,7 @@ import {
   clubesMock,
   comportamientosMock,
   jugadoresMock
-} from '../mock/selectorAmistosoMock.js';
+} from '../mocks/selectorAmistosoMock.js';
 
 function SelectorAmistosoDemo() {
   const [clubSeleccionado, setClubSeleccionado] = useState(null);

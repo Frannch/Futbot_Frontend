@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Temporizador from '../components/Temporizador.jsx';
+import Temporizador from '../components/Timer.jsx';
 
 const clubLocal = {
   nombre: 'Mi Club'
